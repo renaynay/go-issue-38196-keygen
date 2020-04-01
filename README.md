@@ -44,7 +44,7 @@ Go ignores the `go.mod` file embedded in this repository (which pins the crypto 
 
 ---
 
-The problem is that unless there's an API breakage, the user who used `go get` to pull a Go binary will have **absolutely no warning** that their code was bulit against different dependencies. Worse, they will live in the false belief that they are safe because the dependencies are pinned.
+The problem is that unless there's an API breakage, the user who used `go get` to pull a Go binary will have **absolutely no warning** that their code was built against different dependencies. Worse, they will live in the false belief that they are safe because the dependencies are pinned.
 
 This can lead to buggy behavior at best (if a dependency is simply broken at `master`), all the way to a security vulnerability at worse (if crypto is broken at `master`).
 
